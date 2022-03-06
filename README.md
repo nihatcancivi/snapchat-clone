@@ -1,6 +1,7 @@
 ## Snapchat Clone
 iOS app created using:
 Swift , 
+MVC,
 Firebase(Auth,Storage,Firestore),
 SDWebImage,
 ImageSlideshow,
