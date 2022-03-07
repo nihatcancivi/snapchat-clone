@@ -7,7 +7,10 @@ target 'SnapchatClone' do
 pod 'Firebase/Auth'
 pod 'Firebase/Firestore'
 pod 'Firebase/Storage'
-
+pod 'SDWebImage'
+pod 'ImageSlideshow', '~> 1.9.0'
+pod "ImageSlideshow/Kingfisher"
+pod 'Kingfisher', '~> 7.0'
   # Pods for SnapchatClone
 
 end

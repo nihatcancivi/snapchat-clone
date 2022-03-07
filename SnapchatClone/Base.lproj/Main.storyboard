@@ -136,8 +136,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="8fr-1X-hgm">
-                                <rect key="frame" x="0.0" y="44" width="428" height="725"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="selectPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="8fr-1X-hgm">
+                                <rect key="frame" x="0.0" y="44" width="428" height="720"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="720" id="aiP-4a-XjU"/>
+                                </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J7R-kN-Wlc">
                                 <rect key="frame" x="321" y="793" width="87" height="38"/>
@@ -153,12 +156,11 @@
                         <viewLayoutGuide key="safeArea" id="aai-fo-w2e"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="aai-fo-w2e" firstAttribute="trailing" secondItem="J7R-kN-Wlc" secondAttribute="trailing" constant="20" id="Cdy-KM-39D"/>
                             <constraint firstItem="8fr-1X-hgm" firstAttribute="leading" secondItem="aai-fo-w2e" secondAttribute="leading" id="DqN-ps-fjf"/>
-                            <constraint firstItem="aai-fo-w2e" firstAttribute="bottom" secondItem="J7R-kN-Wlc" secondAttribute="bottom" constant="12" id="TQu-8O-WHA"/>
+                            <constraint firstItem="aai-fo-w2e" firstAttribute="bottom" secondItem="J7R-kN-Wlc" secondAttribute="bottom" constant="12" id="EvH-DR-h71"/>
                             <constraint firstItem="8fr-1X-hgm" firstAttribute="top" secondItem="aai-fo-w2e" secondAttribute="top" id="ZFZ-Xw-qH8"/>
-                            <constraint firstItem="aai-fo-w2e" firstAttribute="trailing" secondItem="J7R-kN-Wlc" secondAttribute="trailing" constant="20" id="eAX-r4-qX5"/>
                             <constraint firstItem="8fr-1X-hgm" firstAttribute="trailing" secondItem="aai-fo-w2e" secondAttribute="trailing" id="eWj-5D-gKN"/>
-                            <constraint firstItem="J7R-kN-Wlc" firstAttribute="top" secondItem="8fr-1X-hgm" secondAttribute="bottom" constant="24" id="wEM-lh-9yn"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Upload" image="u.circle" catalog="system" id="9Eh-Xs-jec"/>
@@ -181,6 +183,43 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="OWw-sm-JXM">
                                 <rect key="frame" x="0.0" y="44" width="428" height="799"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="646" id="c9b-EZ-g8O" customClass="FeedCell" customModule="SnapchatClone" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="44.666666030883789" width="428" height="646"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="c9b-EZ-g8O" id="20H-EK-1hr">
+                                            <rect key="frame" x="0.0" y="0.0" width="428" height="646"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="HkB-nn-lbg">
+                                                    <rect key="frame" x="0.0" y="62" width="428" height="584"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="584" id="S06-Ms-Kdo"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="username" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2e4-fW-47t">
+                                                    <rect key="frame" x="10" y="12" width="408" height="29"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="2e4-fW-47t" secondAttribute="trailing" constant="10" id="BYI-Ow-EFj"/>
+                                                <constraint firstItem="HkB-nn-lbg" firstAttribute="leading" secondItem="20H-EK-1hr" secondAttribute="leading" id="Jsd-hW-CLD"/>
+                                                <constraint firstItem="2e4-fW-47t" firstAttribute="leading" secondItem="20H-EK-1hr" secondAttribute="leading" constant="10" id="KeW-dX-70b"/>
+                                                <constraint firstItem="HkB-nn-lbg" firstAttribute="top" secondItem="2e4-fW-47t" secondAttribute="bottom" constant="21" id="PaN-Jd-NRY"/>
+                                                <constraint firstAttribute="trailing" secondItem="HkB-nn-lbg" secondAttribute="trailing" id="UlY-hl-ZQl"/>
+                                                <constraint firstAttribute="bottom" secondItem="HkB-nn-lbg" secondAttribute="bottom" id="hCz-Bs-xwb"/>
+                                                <constraint firstItem="2e4-fW-47t" firstAttribute="top" secondItem="20H-EK-1hr" secondAttribute="top" constant="12" id="rQt-Zf-PWh"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="feedImageView" destination="HkB-nn-lbg" id="rwg-9S-scQ"/>
+                                            <outlet property="feedUsernameLabel" destination="2e4-fW-47t" id="Ldf-kY-6Or"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Y2g-Ee-soQ"/>
@@ -194,13 +233,13 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="Feed" image="f.circle" catalog="system" id="UxQ-0K-Uvm"/>
                     <connections>
-                        <outlet property="tableView" destination="3so-BM-NFG" id="hWb-dn-xCQ"/>
+                        <outlet property="tableView" destination="OWw-sm-JXM" id="2d7-6I-oLp"/>
                         <segue destination="Lh3-Gp-GOl" kind="show" identifier="toSnapVC" id="kPV-pc-FwI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mey-63-cCJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1766" y="-254"/>
+            <point key="canvasLocation" x="1764.9532710280373" y="-254.64362850971924"/>
         </scene>
         <!--SnapVC-->
         <scene sceneID="AGc-nf-maf">
@@ -227,7 +266,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="W29-bg-yxG"/>
                     <connections>
-                        <outlet property="timeLabel" destination="lOW-1Q-ES1" id="nkw-Xq-cX2"/>
+                        <outlet property="timeLabel" destination="lOW-1Q-ES1" id="Dji-ax-EnH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4hc-SC-r4L" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -257,6 +296,7 @@
     <resources>
         <image name="f.circle" catalog="system" width="128" height="121"/>
         <image name="s.circle" catalog="system" width="128" height="121"/>
+        <image name="selectPhoto" width="512" height="512"/>
         <image name="u.circle" catalog="system" width="128" height="121"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

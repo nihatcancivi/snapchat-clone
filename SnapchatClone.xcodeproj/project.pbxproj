@@ -11,6 +11,9 @@
 		213BFEDA27D2337F00626820 /* UploadVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 213BFED927D2337F00626820 /* UploadVC.swift */; };
 		213BFEDC27D2339B00626820 /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 213BFEDB27D2339B00626820 /* SettingsVC.swift */; };
 		213BFEE027D239A800626820 /* SnapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 213BFEDF27D239A800626820 /* SnapVC.swift */; };
+		213BFEE327D2B2B900626820 /* UserSingleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 213BFEE227D2B2B800626820 /* UserSingleton.swift */; };
+		213BFEE527D377FC00626820 /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 213BFEE427D377FC00626820 /* FeedCell.swift */; };
+		2140A28627D3A6C300CA984F /* Snap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2140A28527D3A6C300CA984F /* Snap.swift */; };
 		217C01FF27D21D1D007B47CB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 217C01FE27D21D1D007B47CB /* AppDelegate.swift */; };
 		217C020127D21D1D007B47CB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 217C020027D21D1D007B47CB /* SceneDelegate.swift */; };
 		217C020327D21D1D007B47CB /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 217C020227D21D1D007B47CB /* SignInVC.swift */; };
@@ -26,6 +29,9 @@
 		213BFED927D2337F00626820 /* UploadVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadVC.swift; sourceTree = "<group>"; };
 		213BFEDB27D2339B00626820 /* SettingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
 		213BFEDF27D239A800626820 /* SnapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapVC.swift; sourceTree = "<group>"; };
+		213BFEE227D2B2B800626820 /* UserSingleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserSingleton.swift; sourceTree = "<group>"; };
+		213BFEE427D377FC00626820 /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
+		2140A28527D3A6C300CA984F /* Snap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Snap.swift; sourceTree = "<group>"; };
 		217C01FB27D21D1D007B47CB /* SnapchatClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SnapchatClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		217C01FE27D21D1D007B47CB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		217C020027D21D1D007B47CB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -60,6 +66,7 @@
 				213BFED927D2337F00626820 /* UploadVC.swift */,
 				213BFEDB27D2339B00626820 /* SettingsVC.swift */,
 				213BFEDF27D239A800626820 /* SnapVC.swift */,
+				213BFEE427D377FC00626820 /* FeedCell.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -71,6 +78,15 @@
 				217C01FE27D21D1D007B47CB /* AppDelegate.swift */,
 			);
 			path = Delegates;
+			sourceTree = "<group>";
+		};
+		213BFEE127D2B25B00626820 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				213BFEE227D2B2B800626820 /* UserSingleton.swift */,
+				2140A28527D3A6C300CA984F /* Snap.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		217C01F227D21D1D007B47CB = {
@@ -94,6 +110,7 @@
 		217C01FD27D21D1D007B47CB /* SnapchatClone */ = {
 			isa = PBXGroup;
 			children = (
+				213BFEE127D2B25B00626820 /* Model */,
 				213BFEDE27D2343600626820 /* Delegates */,
 				213BFEDD27D233C100626820 /* ViewControllers */,
 				217C020427D21D1D007B47CB /* Main.storyboard */,
@@ -238,6 +255,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				213BFEE327D2B2B900626820 /* UserSingleton.swift in Sources */,
+				2140A28627D3A6C300CA984F /* Snap.swift in Sources */,
 				213BFED827D2335700626820 /* FeedVC.swift in Sources */,
 				217C020327D21D1D007B47CB /* SignInVC.swift in Sources */,
 				217C01FF27D21D1D007B47CB /* AppDelegate.swift in Sources */,
@@ -245,6 +264,7 @@
 				213BFEE027D239A800626820 /* SnapVC.swift in Sources */,
 				217C020127D21D1D007B47CB /* SceneDelegate.swift in Sources */,
 				213BFEDC27D2339B00626820 /* SettingsVC.swift in Sources */,
+				213BFEE527D377FC00626820 /* FeedCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
